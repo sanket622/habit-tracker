@@ -84,7 +84,7 @@ module.exports.viewhabit = async (request, response) => {
     // Find the habit by ID in the database
     const habits = await Habit.findById(id);
     const habit = await Habit.find({ _id: id });
-    console.log("view habit " + habit.habitName);
+    console.log("view habit " + habit[0].habitName);
 
     // Render the 'habit' view and pass the habit as a parameter
     response.render("habit.ejs", {
