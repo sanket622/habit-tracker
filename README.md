@@ -33,7 +33,6 @@ Preview:
 
 Getting Started:
 1. Clone the repository: git clone https://github.com/sanket622/habit-tracker
-2. hosted link = https://habit-tracker-yq9h.onrender.com
 2. Install the dependencies: npm install
 3. Set up MongoDB and configure the connection in the app.
 4. Start the server: npm start
