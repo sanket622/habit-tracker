@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 
 // MAKING CONNECTION 
-const DB = mongoose.connect('mongodb+srv://himadrinayak:12345@cluster0.h7n86ah.mongodb.net/csv-upload?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+const DB = mongoose.connect('mongodb://localhost:27017/habit_tracker', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 // Handle connection status
