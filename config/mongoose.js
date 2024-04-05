@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 
 // MAKING CONNECTION 
-const DB = mongoose.connect('mongodb://localhost:27017/habit_tracker', { useNewUrlParser: true, useUnifiedTopology: true });
+const DB = mongoose.connect('mongodb+srv://sanket622:Tellispom%4012@sanket622.xgwaedl.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 // Handle connection status
