@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 
 // MAKING CONNECTION 
-const DB = mongoose.connect('mongodb+srv://sanket622:Tellispom%4012@sanket622.xgwaedl.mongodb.net/?retryWrites=true&w=majority&appName=sanket622', { useNewUrlParser: true, useUnifiedTopology: true });
+const DB = mongoose.connect('mongodb+srv://sanket621:123@sanket622.xgwaedl.mongodb.net/?retryWrites=true&w=majority&appName=sanket622', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 // Handle connection status
