@@ -1,3 +1,5 @@
+DEPLOYMENT LINK -->   [https://habit-tracker-4mrg.onrender.com/].
+
 # Habit Tracker Web App
 
 This Habit Tracker web app is a powerful tool built using Node.js, CSS, EJS, MongoDB, Express, and Mongoose. 
