@@ -10,7 +10,7 @@ main {
   place-items: center;
 }
 main div {
-  width: 35rem;
+  width: 45rem;
   justify-content: center;
   display: grid;
 }
