@@ -1,3 +1,4 @@
+FASTER HOSTED LINK --> [https://habit-tracker-beta-ten.vercel.app/]
 DEPLOYMENT LINK -->   [https://habit-tracker-4mrg.onrender.com/].
 
 # Habit Tracker Web App
