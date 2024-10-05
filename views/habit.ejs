@@ -41,15 +41,15 @@
           let stat; 
           details.dates.find((item) => { if(item.date ===
           d) { find = true; stat = item.complete; } }); %>
-    <a href="/update-db-date/?id=<%= details._id %>&date=<%= d %>" class="status">
-      <% if(find && stat==='yes'){ %>
-      <i class="fas fa-check-circle"></i>
-      <% } else if(find && stat==='no'){ %>
-      <i class="fas fa-times-circle"></i>
-      <% } else { %>
-      <i class="fas fa-minus-circle"></i>
-      <% } %>
-    </a>
+          <a href="/update-db-date/?id=<%= details._id %>&date=<%= d %>" class="status">
+            <% if (find && stat === 'yes') { %>
+              <i class="fas fa-check-circle"></i>
+            <% } else if (find && stat === 'no') { %>
+              <i class="fas fa-times-circle"></i>
+            <% } else { %>
+              <i class="fas fa-minus-circle"></i>
+            <% } %>
+          </a>   
   </div>
   <%}%>
       </div>
@@ -58,5 +58,3 @@
   </ul>
 </div>
 <!-- Scripts -->
-
-<script src="/js/habit.js"></script>

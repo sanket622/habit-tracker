@@ -43,9 +43,7 @@ module.exports.load = async (request, response) => {
 module.exports.add = async (request, response) => {
   try {
     request.body.record_tracker = {};
-    request.body.user = "AnyUser";
     request.body.dates = { date: await getTodayDate(), complete: "none" };
-
     console.log(request.body);
 
     // Create a new habit in the database
@@ -90,7 +88,7 @@ module.exports.viewhabit = async (request, response) => {
     response.render("habit.ejs", {
       habit: habit,
       habits: habits,
-      weeklyDate: await getOneWeekDate(),
+      weeklyDate: getOneWeekDate(),
     });
   } catch (error) {
     console.log(error);
