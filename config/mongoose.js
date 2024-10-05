@@ -3,7 +3,11 @@ const mongoose = require("mongoose");
 
 
 // MAKING CONNECTION 
+<<<<<<< HEAD
 const DB = mongoose.connect('mongodb+srv://user121:1234@cluster0.rr2mpun.mongodb.net/HabitTracker?retryWrites=true&w=majority&appName=Cluster0');
+=======
+const DB = mongoose.connect('mongodb+srv://user121:1234@cluster0.rr2mpun.mongodb.net/myMovieList?retryWrites=true&w=majority&appName=Cluster0');
+>>>>>>> 94ec520e2a36ada2998ed43d19bfa9963b69e237
 
 
 // Handle connection status
