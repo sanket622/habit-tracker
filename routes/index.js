@@ -3,7 +3,6 @@ const router = express.Router();
 
 const habitController = require("../controller/home_controller");
 
-// For rendering different pages and controllers
 router.get("/", habitController.load);
 router.post("/add-habit", habitController.add);
 router.get("/delete-habit", habitController.delete);

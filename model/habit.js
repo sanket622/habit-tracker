@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// Schema for habit
 const habitSchema = new mongoose.Schema(
   {
     habitName: {
@@ -19,7 +18,6 @@ const habitSchema = new mongoose.Schema(
   }
 );
 
-// creating a model for habit schema
 const Habit = mongoose.model("Habit", habitSchema);
 
 module.exports = Habit;
