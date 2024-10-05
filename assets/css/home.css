@@ -36,7 +36,7 @@
 
 .habit-list li {
   list-style: none;
-  font-size: 2rem;
+  font-size: 2rem; 
   justify-content: left;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -74,18 +74,82 @@
 }
 
 .fas {
-  font-size: 30px;
+  font-size: 30px; 
 }
+
 .fa-star,
 .fa-trash {
-  font-size: 25px;
+  font-size: 25px; 
 }
+
 .fa-check-circle {
   color: green;
 }
+
 .fa-times-circle {
   color: red;
 }
+
 .fa-minus-circle {
   color: gold;
+}
+
+@media (max-width: 768px) {
+  .habit-form input {
+    width: 20rem; 
+    font-size: 1.4rem; 
+  }
+
+  .habit-list li {
+    font-size: 1.8rem; 
+  }
+
+  .fas {
+    font-size: 28px; 
+  }
+}
+
+@media (max-width: 425px) {
+  .habit-form input {
+    width: 15rem; 
+    font-size: 1.3rem; 
+  }
+
+  .habit-list li {
+    font-size: 1.6rem; 
+  }
+
+  .fas {
+    font-size: 24px; 
+  }
+
+  .habit-form .button {
+    width: 2.5rem; 
+  }
+}
+
+@media (max-width: 375px) {
+  .habit-form input {
+    width: 12rem; 
+    font-size: 1.2rem; 
+  }
+
+  .habit-list li {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (max-width: 320px) {
+  .habit-form input {
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  .habit-list li {
+    font-size: 1.4rem; 
+  }
+
+  #symbol {
+    font-size: 10px; 
+  }
 }

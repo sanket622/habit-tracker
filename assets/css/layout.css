@@ -1,29 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&display=swap");
+
 body {
   background-color: rgba(21, 0, 81, 0.993);
   color: whitesmoke;
   font-family: "Maven Pro", sans-serif;
 }
+
 main {
   display: grid;
   place-items: center;
 }
+
 main div {
   width: 45rem;
   justify-content: center;
   display: grid;
 }
+
 .fas {
   color: white;
   font-size: x-large;
   margin: 5px;
   position: fixed;
 }
+
 .heading {
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-bottom: 5px solid white;
   font-family: "Maven Pro", sans-serif;
   font-size: larger;
+}
+
+@media (max-width: 768px) {
+  main div {
+    width: 35rem;
+  }
+  .heading {
+    font-size: medium;
+    border-bottom: 3px solid white;
+  }
+  .fas {
+    font-size: large;
+  }
+}
+
+@media (max-width: 425px) {
+  main div {
+    width: 28rem;
+  }
+  .heading {
+    font-size: small;
+    border-bottom: 2px solid white;
+  }
+  .fas {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 375px) {
+  main div {
+    width: 25rem;
+  }
+  .heading {
+    font-size: small;
+  }
+  .fas {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 320px) {
+  main div {
+    width: 20rem;
+  }
+  .heading {
+    font-size: smaller;
+    border-bottom: 1px solid white;
+  }
+  .fas {
+    font-size: small;
+  }
 }

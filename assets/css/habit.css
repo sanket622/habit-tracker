@@ -39,17 +39,16 @@
 .habit-list::-webkit-scrollbar {
   display: none;
 }
-.habit-list-item {
+.habit-list-items {
   background-color: #02005f7a;
-  width: 650px;
+  width: 100%;
+  max-width: 650px;
   height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  border-radius: 10px;
-  border: 1px solid #f44336;
   position: relative;
 }
 a {
@@ -99,4 +98,85 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .habit-list-items {
+    width: 100%;
+    max-width: 90%;
+    height: 60px;
+    padding: 0 15px;
+  }
+  .habit-name {
+    font-size: 1.8em;
+  }
+  .weekly__container {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 8px;
+  }
+  .weekly__date {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 425px) {
+  .habit-list-items {
+    width: 100%;
+    max-width: 100%;
+    height: 55px;
+    padding: 0 10px;
+  }
+  .habit-name {
+    font-size: 1.6em;
+  }
+  .weekly__container {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+  }
+  .weekly__date {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .habit-list-items {
+    width: 100%;
+    height: 50px;
+    padding: 0 8px;
+  }
+  .habit-name {
+    font-size: 1.5em;
+  }
+  .weekly__container {
+    padding: 4px;
+  }
+  .weekly__date {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 320px) {
+  .habit-list-items {
+    width: 100%;
+    height: 45px;
+    padding: 0 5px;
+  }
+  .habit-name {
+    font-size: 1.3em;
+  }
+  .weekly__container {
+    padding: 2px;
+  }
+  .weekly__date {
+    width: 70px;
+    height: 70px;
+  }
 }
