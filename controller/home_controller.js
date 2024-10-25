@@ -35,10 +35,16 @@ module.exports.load = async (request, response) => {
 
 module.exports.add = async (request, response) => {
   try {
+    const existingHabit = await Habit.findOne({
+      habitName: request.body.habitName,
+    });
+    console.log(request.body);
+    if (existingHabit) {
+      return response.redirect("back");
+    }
     request.body.dates = { date: getTodayDate(), complete: "none" };
-
-    const newHabit = await Habit.create(request.body);
-    newHabit.save();
+    const newHabit = new Habit(request.body);
+    await newHabit.save();
 
     return response.redirect("back");
   } catch (err) {
