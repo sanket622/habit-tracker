@@ -35,9 +35,7 @@ module.exports.load = async (request, response) => {
 
 module.exports.add = async (request, response) => {
   try {
-    request.body.record_tracker = {};
-    request.body.dates = { date: await getTodayDate(), complete: "none" };
-    console.log(request.body);
+    request.body.dates = { date: getTodayDate(), complete: "none" };
 
     const newHabit = await Habit.create(request.body);
     newHabit.save();
@@ -61,12 +59,9 @@ module.exports.delete = async (request, response) => {
 module.exports.viewhabit = async (request, response) => {
   try {
     let id = request.query.id;
-    const habits = await Habit.findById(id);
     const habit = await Habit.find({ _id: id });
-    console.log("view habit " + habit[0].habitName);
     response.render("habit.ejs", {
       habit: habit,
-      habits: habits,
       weeklyDate: getOneWeekDate(),
     });
   } catch (error) {
@@ -118,4 +113,3 @@ module.exports.updateDates = async (req, res) => {
     console.log("error insider updatesDate: " + error);
   }
 };
-

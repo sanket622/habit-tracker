@@ -19,12 +19,21 @@
       <div class="habit">
         <i class="fas fa-user space-icon"></i> <%=habit.habitName%>
       </div>
-      <%let currentDate = new Date(); let dd = currentDate.getDate(); let mm =
-        currentDate.getMonth() + 1; const yyyy = currentDate.getFullYear(); if
-        (dd < 10) dd = '0' + dd; if (mm < 10) mm = '0' + mm; let today = dd +
-        '/' + mm + '/' + yyyy; let found; let status;
-        habit.dates.find(function(item){ if(item.date === today) { found =
-        true; status = item.complete; } }); %>
+      <%let currentDate = new Date();
+       let dd = currentDate.getDate(); 
+       let mm = currentDate.getMonth() + 1; 
+       const yyyy = currentDate.getFullYear(); 
+       if(dd < 10) dd = '0' + dd; 
+       if (mm < 10) mm = '0' + mm;
+       let today = dd +'/' + mm + '/' + yyyy; 
+       let found; 
+       let status;
+       habit.dates.find(function(item)
+       { if(item.date === today){
+         found = true; 
+         status = item.complete;
+         } 
+        }); %>
 
       <a
           href="/update-db-date/?id=<%= habit._id %>&date=<%= today %>"
